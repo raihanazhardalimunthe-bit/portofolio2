@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raihan Azhar — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__logo">
+      <div class="logo-mark">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect x="2" y="2" width="11" height="11" rx="3" fill="var(--accent)"/>
+          <rect x="15" y="2" width="11" height="11" rx="3" fill="var(--accent)" opacity=".4"/>
+          <rect x="2" y="15" width="11" height="11" rx="3" fill="var(--accent)" opacity=".4"/>
+          <rect x="15" y="15" width="11" height="11" rx="3" fill="var(--accent)"/>
+        </svg>
+      </div>
+      <span class="logo-text">Hannn</span>
+    </div>
+    <ul class="navbar__links">
+      <li><a href="#home"><span>01</span>Home</a></li>
+      <li><a href="#about"><span>02</span>About</a></li>
+      <li><a href="#portfolio"><span>03</span>Portfolio</a></li>
+      <li><a href="#contact"><span>04</span>Contact</a></li>
+    </ul>
+    <div class="navbar__cta">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="#contact" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21v-4"/><path d="M8 21v-4"/><path d="M12 17v4"/></svg>
+        Hire Me
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ── HERO SECTION ────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__noise"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+
+    <div class="tech-chip tech-chip--1">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      React
+    </div>
+    <div class="tech-chip tech-chip--2">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      Node.js
+    </div>
+    <div class="tech-chip tech-chip--3">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      CSS
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="badge__dot"></span>
+        <span>Available for Work</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+
+      <div class="hero__eyebrow">Web Developer berbasis di Indonesia</div>
+
+      <h1 class="hero__title">
+        Hi, saya<br>
+        <span class="highlight">Raihan Azhar<br>Dalimunthe</span>
+      </h1>
+
+      <div class="hero__role-wrap">
+        <span class="hero__role-line"></span>
+        <span class="hero__role">Crafting digital experiences</span>
+      </div>
+
+      <p class="hero__desc">
+        Saya membangun website yang cepat, responsif, dan tampak profesional.
+        Mari buat sesuatu yang luar biasa bersama.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <span>Lihat Portfolio</span>
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          <span>Hubungi Saya</span>
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">4<span>+</span></span>
+          <span class="stat__label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Projects
+          </span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">5<span>+</span></span>
+          <span class="stat__label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Tahun Belajar
+          </span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">7<span>+</span></span>
+          <span class="stat__label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            Teknologi
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="scroll__mouse"><div class="scroll__wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS SECTION ──────────────── -->
+  <section class="skills" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Keahlian <span class="title-accent">Saya</span></h2>
+        <p class="section-subtitle">Teknologi yang saya kuasai</p>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-card" style="--i:0">
+          <div class="skill-card__top"><span class="skill-tag skill-tag--core">Programming</span></div>
+          <h3>HTML & CSS</h3>
+          <p>Membuat tampilan website yang responsif dan modern menggunakan HTML dan CSS.</p>
+        </div>
+        <div class="skill-card" style="--i:1">
+          <div class="skill-card__top"><span class="skill-tag skill-tag--core">Programming</span></div>
+          <h3>JavaScript</h3>
+          <p>Membuat fitur interaktif pada website seperti kalkulator dan manipulasi DOM.</p>
+        </div>
+        <div class="skill-card" style="--i:2">
+          <div class="skill-card__top"><span class="skill-tag skill-tag--core">Programming</span></div>
+          <h3>Python</h3>
+          <p>Membuat aplikasi sederhana berbasis desktop menggunakan bahasa Python.</p>
+        </div>
+        <div class="skill-card" style="--i:3">
+          <div class="skill-card__top"><span class="skill-tag skill-tag--tools">Networking</span></div>
+          <h3>Mikrotik</h3>
+          <p>Merancang dan mengelola jaringan komputer menggunakan perangkat Mikrotik.</p>
+        </div>
+        <div class="skill-card" style="--i:4">
+          <div class="skill-card__top"><span class="skill-tag skill-tag--core">Database</span></div>
+          <h3>SQL</h3>
+          <p>Mengelola database dan melakukan query untuk pengolahan data.</p>
+        </div>
+        <div class="skill-card" style="--i:5">
+          <div class="skill-card__top"><span class="skill-tag skill-tag--tools">Design</span></div>
+          <h3>CorelDraw & Canva</h3>
+          <p>Mendesain konten visual seperti poster, banner, dan desain digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO SECTION ──────────── -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+          Work
+        </span>
+        <h2 class="section-title">Port<span class="title-accent">folio</span></h2>
+        <p class="section-subtitle">Beberapa project yang pernah saya buat</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-card__body">
+            <h3>Perancangan Jaringan Sekolah</h3>
+            <p>Merancang dan mengimplementasikan jaringan LAN pada lingkungan sekolah menggunakan Mikrotik.</p>
+          </div>
+          <div class="portfolio-card__footer">
+            <span class="tech-tag">Networking</span>
+            <span class="tech-tag">Mikrotik</span>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__body">
+            <h3>Aplikasi Makanan Sehat</h3>
+            <p>Aplikasi desktop sederhana menggunakan Python untuk membantu pengguna memilih menu makanan sehat.</p>
+          </div>
+          <div class="portfolio-card__footer">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Desktop App</span>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__body">
+            <h3>Dashboard Penjualan Coffee Shop</h3>
+            <p>Membuat dashboard analisis penjualan untuk membantu pengambilan keputusan menggunakan Looker Studio.</p>
+          </div>
+          <div class="portfolio-card__footer">
+            <span class="tech-tag">Looker Studio</span>
+            <span class="tech-tag">Data Visualization</span>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__body">
+            <h3>Kalkulator Web</h3>
+            <p>Membuat aplikasi kalkulator sederhana berbasis web menggunakan JavaScript.</p>
+          </div>
+          <div class="portfolio-card__footer">
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT SECTION ───────────── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.03 1.18C.03.67.47.14 1.02.03c.55-.11 1.1.13 1.41.61l2 4a2 2 0 01-.45 2.45l-.78.64a16 16 0 006.09 6.09l.64-.78a2 2 0 012.45-.45l4 2c.48.31.72.86.61 1.41z"/></svg>
+          Get In Touch
+        </span>
+        <h2 class="section-title">Hubungi <span class="title-accent">Saya</span></h2>
+        <p class="section-subtitle">Ada project menarik? Mari kita diskusikan!</p>
+      </div>
+      <div class="contact__layout">
+        <div class="contact__info">
+          <p class="contact__intro">
+            Saya terbuka untuk peluang freelance, kolaborasi, maupun full-time.
+            Jangan ragu untuk menghubungi saya!
+          </p>
+          <div class="contact__items">
+            <a href="mailto:raihanazhardalimunthe@gmail.com" class="contact__item">
+              <div class="contact__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact__item-text">
+                <span class="contact__item-label">Email</span>
+                <span class="contact__item-value">raihanazhardalimunthe@gmail.com</span>
+              </div>
+              <svg class="contact__item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/6289602490074" class="contact__item" target="_blank">
+              <div class="contact__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+              </div>
+              <div class="contact__item-text">
+                <span class="contact__item-label">WhatsApp</span>
+                <span class="contact__item-value">+62 896 0249 0074</span>
+              </div>
+              <svg class="contact__item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://instagram.com/raihan_azhar22" class="contact__item" target="_blank">
+              <div class="contact__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div class="contact__item-text">
+                <span class="contact__item-label">Instagram</span>
+                <span class="contact__item-value">@raihan_azhar22</span>
+              </div>
+              <svg class="contact__item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://github.com/hannn" class="contact__item" target="_blank">
+              <div class="contact__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </div>
+              <div class="contact__item-text">
+                <span class="contact__item-label">GitHub</span>
+                <span class="contact__item-value">github.com/hannn</span>
+              </div>
+              <svg class="contact__item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact__form" onsubmit="handleSubmit(event)">
+          <div class="form-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <span>Kirim Pesan</span>
+          </div>
+          <div class="form-group">
+            <label for="name">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Nama
+            </label>
+            <input type="text" id="name" placeholder="Nama lengkap kamu" required>
+          </div>
+          <div class="form-group">
+            <label for="email">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </label>
+            <input type="email" id="email" placeholder="email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              Pesan
+            </label>
+            <textarea id="message" rows="5" placeholder="Ceritakan project atau keperluanmu..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span>Kirim Pesan</span>
+          </button>
+          <p class="form-success" id="formSuccess">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Pesan berhasil dikirim! Saya akan segera menghubungi kamu.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BACK TO TOP ──────────────────────────── -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ── FOOTER ──────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <div class="logo-mark logo-mark--sm">
+              <svg width="20" height="20" viewBox="0 0 28 28" fill="none">
+                <rect x="2" y="2" width="11" height="11" rx="3" fill="var(--accent)"/>
+                <rect x="15" y="2" width="11" height="11" rx="3" fill="var(--accent)" opacity=".4"/>
+                <rect x="2" y="15" width="11" height="11" rx="3" fill="var(--accent)" opacity=".4"/>
+                <rect x="15" y="15" width="11" height="11" rx="3" fill="var(--accent)"/>
+              </svg>
+            </div>
+            <span>Hannn</span>
+          </div>
+          <p class="footer__copy">&copy; 2026 Raihan Azhar Dalimunthe</p>
+        </div>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
